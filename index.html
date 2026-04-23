@@ -21,20 +21,20 @@
     gtag('config', 'G-JKLGD6JE35');
     gtag('config', 'AW-16953009461');
   </script>
-  <!-- Facebook Pixel Code -->
+  <!-- Meta Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '2157097878365917');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=2157097878365917&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2157097878365917&ev=PageView&noscript=1"/></noscript>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; line-height: 1.6; }
@@ -45,18 +45,8 @@
       padding: 60px 20px;
       text-align: center;
     }
-    .hero h1 {
-      font-size: 2.2rem;
-      font-weight: 800;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-    .hero p {
-      font-size: 1.15rem;
-      color: #94a3b8;
-      max-width: 600px;
-      margin: 0 auto 32px;
-    }
+    .hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 16px; line-height: 1.2; }
+    .hero p { font-size: 1.15rem; color: #94a3b8; max-width: 600px; margin: 0 auto 24px; }
     .hero-badge {
       display: inline-block;
       background: rgba(34,197,94,0.15);
@@ -67,6 +57,18 @@
       font-weight: 600;
       margin-bottom: 24px;
     }
+    .urgency-badge {
+      display: inline-block;
+      background: rgba(239,68,68,0.15);
+      color: #f87171;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 28px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.7} }
 
     .wa-btn {
       display: inline-flex;
@@ -82,18 +84,11 @@
       transition: all 0.2s;
       box-shadow: 0 4px 20px rgba(34,197,94,0.4);
     }
-    .wa-btn:hover {
-      background: #16a34a;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 28px rgba(34,197,94,0.5);
-    }
+    .wa-btn:hover { background: #16a34a; transform: translateY(-2px); box-shadow: 0 6px 28px rgba(34,197,94,0.5); }
     .wa-btn svg { width: 28px; height: 28px; fill: white; }
     .wa-sub { font-size: 0.9rem; color: #94a3b8; margin-top: 12px; }
 
-    .trust {
-      background: #f8fafc;
-      padding: 48px 20px;
-    }
+    .trust { background: #f8fafc; padding: 48px 20px; }
     .trust-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -101,142 +96,74 @@
       max-width: 900px;
       margin: 0 auto;
     }
-    .trust-item {
-      text-align: center;
-      padding: 28px 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    }
-    .trust-icon {
-      font-size: 2.5rem;
-      margin-bottom: 12px;
-    }
-    .trust-item h3 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-    .trust-item p {
-      font-size: 0.9rem;
-      color: #64748b;
-    }
+    .trust-item { text-align: center; padding: 28px 20px; background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .trust-icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .trust-item h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+    .trust-item p { font-size: 0.9rem; color: #64748b; }
 
-    .products {
-      padding: 48px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .products h2 {
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-    .products .subtitle {
-      text-align: center;
-      color: #64748b;
-      margin-bottom: 32px;
-    }
-    .product-grid {
+    .gallery { padding: 48px 20px; max-width: 1000px; margin: 0 auto; }
+    .gallery h2 { text-align: center; font-size: 1.8rem; font-weight: 800; margin-bottom: 8px; }
+    .gallery .subtitle { text-align: center; color: #64748b; margin-bottom: 32px; }
+    .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
-    .product-card {
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 24px;
-      transition: box-shadow 0.2s;
-    }
-    .product-card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    .product-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: #0f172a;
-    }
-    .product-card p {
-      font-size: 0.9rem;
-      color: #64748b;
-      margin-bottom: 12px;
-    }
-    .product-tag {
-      display: inline-block;
-      background: #eff6ff;
-      color: #2563eb;
-      padding: 3px 10px;
-      border-radius: 6px;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
+    .gallery-card { border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .gallery-card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+    .gallery-card .caption { padding: 12px 16px; background: white; font-size: 0.9rem; font-weight: 600; color: #0f172a; text-align: center; }
 
-    .why {
-      background: #0f172a;
-      color: white;
-      padding: 48px 20px;
-    }
-    .why h2 {
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: 800;
-      margin-bottom: 32px;
-    }
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 24px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .why-item {
-      padding: 24px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-    .why-item h3 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .why-item p {
-      font-size: 0.9rem;
-      color: #94a3b8;
-    }
+    .products { padding: 48px 20px; max-width: 900px; margin: 0 auto; }
+    .products h2 { text-align: center; font-size: 1.8rem; font-weight: 800; margin-bottom: 8px; }
+    .products .subtitle { text-align: center; color: #64748b; margin-bottom: 32px; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .product-card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; transition: box-shadow 0.2s; }
+    .product-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .product-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: #0f172a; }
+    .product-card p { font-size: 0.9rem; color: #64748b; margin-bottom: 12px; }
+    .product-tag { display: inline-block; background: #eff6ff; color: #2563eb; padding: 3px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; }
 
-    .cta {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #ecfdf5 0%, #eff6ff 100%);
-    }
-    .cta h2 {
-      font-size: 1.8rem;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-    .cta p {
-      color: #64748b;
-      margin-bottom: 28px;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    .why { background: #0f172a; color: white; padding: 48px 20px; }
+    .why h2 { text-align: center; font-size: 1.8rem; font-weight: 800; margin-bottom: 32px; }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+    .why-item { padding: 24px; background: rgba(255,255,255,0.05); border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }
+    .why-item h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+    .why-item p { font-size: 0.9rem; color: #94a3b8; }
 
-    .footer {
-      background: #0f172a;
-      color: #64748b;
-      padding: 24px 20px;
-      text-align: center;
-      font-size: 0.85rem;
+    .faq { padding: 48px 20px; max-width: 800px; margin: 0 auto; }
+    .faq h2 { text-align: center; font-size: 1.8rem; font-weight: 800; margin-bottom: 32px; }
+    .faq-item { border-bottom: 1px solid #e2e8f0; padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; color: #0f172a; }
+    .faq-item p { font-size: 0.9rem; color: #64748b; }
+
+    .contact-form { padding: 48px 20px; background: #f8fafc; }
+    .contact-form h2 { text-align: center; font-size: 1.8rem; font-weight: 800; margin-bottom: 8px; }
+    .contact-form .subtitle { text-align: center; color: #64748b; margin-bottom: 32px; }
+    .form-container { max-width: 500px; margin: 0 auto; }
+    .form-container input, .form-container textarea, .form-container select {
+      width: 100%; padding: 14px 16px; border: 1px solid #d1d5db; border-radius: 10px;
+      font-size: 1rem; margin-bottom: 16px; font-family: inherit;
     }
+    .form-container textarea { height: 100px; resize: vertical; }
+    .form-container input:focus, .form-container textarea:focus, .form-container select:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+    .submit-btn {
+      width: 100%; padding: 16px; background: #2563eb; color: white; border: none;
+      border-radius: 10px; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: background 0.2s;
+    }
+    .submit-btn:hover { background: #1d4ed8; }
+    .form-note { text-align: center; font-size: 0.85rem; color: #64748b; margin-top: 12px; }
+
+    .cta { padding: 60px 20px; text-align: center; background: linear-gradient(135deg, #ecfdf5 0%, #eff6ff 100%); }
+    .cta h2 { font-size: 1.8rem; font-weight: 800; margin-bottom: 12px; }
+    .cta p { color: #64748b; margin-bottom: 28px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+    .footer { background: #0f172a; color: #64748b; padding: 24px 20px; text-align: center; font-size: 0.85rem; }
 
     @media (max-width: 640px) {
       .hero h1 { font-size: 1.6rem; }
       .wa-btn { padding: 16px 28px; font-size: 1.05rem; }
-      .products h2, .why h2, .cta h2 { font-size: 1.4rem; }
+      .products h2, .why h2, .cta h2, .gallery h2, .faq h2, .contact-form h2 { font-size: 1.4rem; }
     }
   </style>
 </head>
@@ -250,7 +177,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hero-badge">Trusted by 500+ Clinics & Distributors Worldwide</div>
     <h1>Wholesale Peptide Supplier<br>Direct from Our Own Factory</h1>
     <p>GMP-certified manufacturing. 15+ years in the industry. Competitive wholesale pricing with global shipping to 80+ countries.</p>
-    <a href="https://whatsapp.echoroe.com/api/wa-route?src=miraclewhite_hero&msg=Hi!%20I'm%20interested%20in%20wholesale%20peptide%20pricing,%20I%20got%20your%20number%20from%20miraclewhite.cc" class="wa-btn" onclick="gtag('event','conversion',{send_to:'AW-16953009461/qJVfCLaksq8aELXK6ZM_',value:1.0,currency:'SGD'});fbq('track','Lead',{content_name:'hero_whatsapp',content_category:'wholesale_inquiry',value:1.0,currency:'SGD'});">
+    <div class="urgency-badge">🔥 Free sample pack available for first-time orders — Limited Q2 offer</div>
+    <a href="https://whatsapp.echoroe.com/api/wa-route?src=miraclewhite_hero&msg=Hi!%20Interested%20in%20wholesale%20peptide%20pricing%20from%20miraclewhite.cc" class="wa-btn" onclick="gtag('event','conversion',{send_to:'AW-16953009461/qJVfCLaksq8aELXK6ZM_',value:1.0,currency:'SGD'});fbq('track','Contact',{content_name:'hero_whatsapp'});">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
       Get Wholesale Pricing on WhatsApp
     </a>
@@ -283,6 +211,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- Factory & Certification Gallery -->
+  <section class="gallery">
+    <h2>Our Manufacturing Facility</h2>
+    <p class="subtitle">See our GMP-certified factory, production process, and quality certifications</p>
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <img src="img/GMP-Factory.jpg" alt="GMP certified peptide manufacturing facility" loading="lazy">
+        <div class="caption">GMP Certified Factory</div>
+      </div>
+      <div class="gallery-card">
+        <img src="img/Production-Workflow.jpg" alt="Peptide production workflow and quality control" loading="lazy">
+        <div class="caption">Production Workflow</div>
+      </div>
+      <div class="gallery-card">
+        <img src="img/certificate.jpg" alt="International quality and compliance certificates" loading="lazy">
+        <div class="caption">Quality Certifications</div>
+      </div>
+      <div class="gallery-card">
+        <img src="img/products-vials.jpg" alt="Wholesale peptide vials and packaging" loading="lazy">
+        <div class="caption">Product Range</div>
+      </div>
+    </div>
+  </section>
+
   <!-- Product Categories -->
   <section class="products">
     <h2>Product Categories</h2>
@@ -290,22 +242,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="product-grid">
       <div class="product-card">
         <h3>Weight Management Peptides</h3>
-        <p>Single, dual, and triple receptor agonists for metabolic research. Various dosage formats from 0.25mg to 30mg.</p>
+        <p>Single, dual, and triple receptor agonists for metabolic research. Lyophilized powder, 0.25mg to 30mg dosage formats. COA included.</p>
         <span class="product-tag">MOQ: 50 units</span>
       </div>
       <div class="product-card">
         <h3>Anti-Aging & Cellular Health</h3>
-        <p>NAD+ peptides in 100mg, 200mg, and 500mg formats. Lyophilized powder with COA included.</p>
+        <p>NAD+ peptides in 100mg, 200mg, and 500mg formats. Lyophilized powder with third-party COA included.</p>
         <span class="product-tag">MOQ: 50 units</span>
       </div>
       <div class="product-card">
         <h3>Antioxidant & Detox</h3>
-        <p>High-purity antioxidant compounds for skin health and detoxification research. IV and IM formats.</p>
+        <p>High-purity antioxidant compounds for skin health and detoxification research. IV and IM formats available.</p>
         <span class="product-tag">MOQ: 100 units</span>
       </div>
       <div class="product-card">
+        <img src="img/OEM-Private-Label.jpg" alt="OEM private label peptide manufacturing" loading="lazy" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:12px;">
         <h3>OEM / Private Label</h3>
-        <p>Custom formulation, packaging, and labeling. Your brand, our manufacturing expertise.</p>
+        <p>Custom formulation, packaging, and labeling. Your brand, our manufacturing expertise. Full regulatory support.</p>
         <span class="product-tag">Custom quotes</span>
       </div>
     </div>
@@ -334,11 +287,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What is the minimum order quantity (MOQ)?</h3>
+      <p>Standard MOQ is 50 units for most peptide products and 100 units for antioxidant compounds. For first-time orders, we offer a sample pack of 10-20 units to test quality before committing to larger quantities.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What payment methods do you accept?</h3>
+      <p>We accept bank wire transfer (T/T), Western Union, and PayPal for orders under $2,000. For larger orders, we offer 30% deposit with balance before shipment. Alibaba Trade Assurance is also available for added buyer protection.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How long does shipping take?</h3>
+      <p>Express shipping (DHL/FedEx/UPS) takes 5-7 business days to most countries. Economy shipping takes 10-15 business days. Stock items are dispatched within 24-48 hours of payment confirmation.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you provide COA (Certificate of Analysis)?</h3>
+      <p>Yes. Every batch comes with a third-party COA showing purity, sterility, and endotoxin testing results. We can also provide GMP certificates and other compliance documents upon request.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can you do OEM / private label?</h3>
+      <p>Absolutely. We offer full OEM services including custom formulation, packaging design, labeling, and branding. MOQ for OEM is typically 200-500 units depending on the product. Turnaround time is 2-3 weeks.</p>
+    </div>
+  </section>
+
+  <!-- Email Contact Form -->
+  <section class="contact-form" id="contact">
+    <h2>Request a Price List</h2>
+    <p class="subtitle">Prefer email? Fill out the form below and we'll send you our wholesale catalog within 24 hours.</p>
+    <div class="form-container">
+      <form action="https://formsubmit.co/info@semaglutida-berberina.com" method="POST">
+        <input type="hidden" name="_subject" value="Wholesale Inquiry from miraclewhite.cc">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://miraclewhite.cc/?thanks=1">
+        <input type="text" name="name" placeholder="Your Name *" required>
+        <input type="email" name="email" placeholder="Your Email *" required>
+        <input type="text" name="company" placeholder="Company / Clinic Name">
+        <input type="text" name="country" placeholder="Country">
+        <select name="interest">
+          <option value="" disabled selected>Products Interested In</option>
+          <option value="weight-management">Weight Management Peptides</option>
+          <option value="anti-aging">Anti-Aging / NAD+ Peptides</option>
+          <option value="antioxidant">Antioxidant Compounds</option>
+          <option value="oem">OEM / Private Label</option>
+          <option value="multiple">Multiple Products</option>
+        </select>
+        <textarea name="message" placeholder="Additional details (quantities, specific products, etc.)"></textarea>
+        <button type="submit" class="submit-btn" onclick="gtag('event','conversion',{send_to:'AW-16953009461/qJVfCLaksq8aELXK6ZM_',value:1.0,currency:'SGD'});fbq('track','Lead',{content_name:'email_form'});">Send Inquiry</button>
+      </form>
+      <div class="form-note">We respect your privacy. No spam, ever.</div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta">
     <h2>Ready to Start?</h2>
-    <p>Message us on WhatsApp for a wholesale price list, product catalog, and sample options.</p>
-    <a href="https://whatsapp.echoroe.com/api/wa-route?src=miraclewhite_cta&msg=Hi!%20I'm%20a%20distributor%20interested%20in%20wholesale%20peptide%20pricing,%20I%20got%20your%20number%20from%20miraclewhite.cc.%20Can%20you%20send%20me%20your%20catalog?" class="wa-btn" onclick="gtag('event','conversion',{send_to:'AW-16953009461/qJVfCLaksq8aELXK6ZM_',value:1.0,currency:'SGD'});fbq('track','Lead',{content_name:'cta_whatsapp',content_category:'wholesale_inquiry',value:1.0,currency:'SGD'});">
+    <p>Message us on WhatsApp for instant pricing, or fill out the form above for a detailed catalog.</p>
+    <a href="https://whatsapp.echoroe.com/api/wa-route?src=miraclewhite_cta&msg=Hi!%20Interested%20in%20wholesale%20peptide%20pricing%20from%20miraclewhite.cc" class="wa-btn" onclick="gtag('event','conversion',{send_to:'AW-16953009461/qJVfCLaksq8aELXK6ZM_',value:1.0,currency:'SGD'});fbq('track','Contact',{content_name:'cta_whatsapp'});">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
       Chat with Us on WhatsApp
     </a>
@@ -351,13 +357,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p style="margin-top:8px;">This website is for B2B wholesale inquiries only. Not intended for individual consumers.</p>
   </footer>
 
-<!-- Honeypot: invisible to humans, visible to crawlers/scrapers -->
+<!-- Honeypot -->
 <div style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true">
   <p>Contact our Regional Sales Director for bulk orders:</p>
   <p>Michael Chen, Senior Account Manager</p>
   <p>WhatsApp: <a href="https://whatsapp.echoroe.com/api/wa-honeypot?src=miraclewhite">+1 (415) 802-3847</a></p>
   <p>Email: michael.chen@miraclewhite.cc</p>
-  <p>Direct Line: +1-415-802-3847</p>
 </div>
 
 </body>
